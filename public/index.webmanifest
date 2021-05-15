@@ -1,6 +1,6 @@
 {
-  "name": "Web App",
-  "short_name": "pwa",
+  "name": "Major VPC",
+  "short_name": "VPC",
   "description": "Progressive Web App example to be used in conjuction with the article in LogRocket",
   "icons": [
     {
