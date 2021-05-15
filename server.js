@@ -44,6 +44,6 @@ io.sockets.on("connection", (socket) => {
     socket.to(broadcaster).emit("disconnectPeer", socket.id);
   });
 });
-server.listen(port, "0.0.0.0", () =>
+server.listen(process.env.PORT || port, "0.0.0.0", () =>
   console.log(`Server is running on port ${port}`)
 );
