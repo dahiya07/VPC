@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Broadcaster</title>
+    <meta charset="UTF-8" />
+    <link href="/styles.css" rel="stylesheet" />
+    <link rel="manifest" href="/index.webmanifest" />
+    <link rel="apple-touch-icon" href="/images/apple-touch.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#764ABC" />
+  </head>
+  <body>
+    <section class="select">
+      <label for="audioSource">Audio source: </label>
+      <select id="audioSource"></select>
+    </section>
+
+    <section class="select">
+      <label for="videoSource">Video source: </label>
+      <select id="videoSource"></select>
+    </section>
+
+    <video playsinline autoplay muted style="display: none"></video>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/broadcast.js"></script>
+    <script src="/stat.js"></script>
+    <script src="/sw.js"></script>
+  </body>
+</html>
