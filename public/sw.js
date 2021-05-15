@@ -1,5 +1,5 @@
 const CACHE_NAME = "sw-cache-example";
-const toCache = ["/", "/broadcast.html"];
+const toCache = ["/", "/index.html"];
 
 self.addEventListener("install", function (event) {
   event.waitUntil(
